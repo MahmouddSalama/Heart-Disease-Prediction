@@ -10,7 +10,7 @@ def load_model(modelnum):
     
 
 
-def predict(modelnum,male,age,BPMeds,prevalentHyp,diabetes,totChol,sysBP,diaBP,BMI,glucose):
-    c=load_model(modelnum)
-    return c.predict(([[male,age,BPMeds,prevalentHyp,diabetes,totChol,sysBP,diaBP,BMI,glucose]]))[0]
+def predict(l):
+    c=load_model(0)
+    return c.predict([l])[0]
 
